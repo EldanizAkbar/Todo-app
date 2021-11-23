@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(236, 33%, 92%) !important;
+}
+
+.bg-image {
+  background-image: url("../images/bg-desktop-light.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.title {
+  font-size: 40px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 15px;
+  color: white;
+  line-height: center;
+}
+
+.add-input {
+  border: none;
+  border-radius: 5px;
+  padding: 20px 15px;
+  width: 85%;
+  outline: none;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.add-btn {
+  font-size: 30px !important;
+  border-image-slice: 1 !important;
+  border-width: 2px !important;
+  border-image-source: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) !important;
+  background-color: transparent !important;
+  color: white !important;
+  line-height: 100% !important;
+}
+
+.add-btn:hover {
+  background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%)) !important;
+
+}
+
+.add-btn.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.todoList {
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: -15%;
+}
+
+.todoList li {
+  position: relative;
+  list-style: none;
+  background: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+  padding: 15px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
+}
+
+.info {
+  list-style: none;
+  background: white;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.205);
+  padding: 15px 15px;
+  cursor: default;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  border-radius: 3px;
+
+}
+
+.info div button {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: #212529;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+.info div button:hover {
+  cursor: pointer;
+  color: #212529;
+}
+
+.passive {
+  opacity: 0.4;
+}
+
+.passive:hover {
+  opacity: 0.4 !important;
+  cursor: text !important;
+}
+
+.opa {
+  opacity: 0;
+}
+
+.right a {
+  text-decoration: none;
+  background: linear-gradient(to left, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 575.98px) {
+  .title {
+    font-size: 30px;
+    letter-spacing: 15px;
+  }
+
+  .add-input {
+    padding: 13px 15px;
+    width: 80%;
+
+  }
+
+  .add-btn {
+    font-size: 20px !important;
+  }
+
+}
